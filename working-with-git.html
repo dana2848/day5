@@ -1,0 +1,34 @@
+
+<link href
+<h1>working with git</h1>
+<h3>1. add files to your project</h3>
+<p>this can be done via the touch command or through the interface as usual</p>
+<p>examples <code>$touch index.html && touch main.css</code></p>
+<h3>2. add new or modified files to staging</h3>
+<p>once we add new files or modify existing files we can tell git to track then by adding them to staging fo the next commit<br>
+  think of commts as chekpoints.  This will let git know what files the next checkpoint will consist of .</p>
+  <p><code>$git add<filename></code></p>
+    <p>or</p>
+    <p><code>$git add . </code></p>
+
+    <p>your files are now on stage to be included in the next commit/checkpoint</p>
+
+    <h3>3. add a commit and a commit message</h3>
+    <p>with your changes staged, you can creat the checkpoint in your work with the following command.</p>
+    <code> $git commit -m "commit message" </code>
+    <p>this command creates the checkpoint fo git! pretty simple</p>
+    <h3>4. push your code</h3>
+    <p>finally push your changes up to github with  the following command:</p>
+    <pre>$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 290 bytes | 290.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/dana2848/day5-4.git
+   06a0dc7..ee95528  master -> master
+ </pre>
+ <p>if you ge tan error, you may have not initialized your git respistory with <code>$git init</code><br>
+   or you may have initialized, but you have not yet modified any files since thenusing:<br></p>
+   <code>$git add<filename></code> and <code>$git commit -m "commit message"</code>
